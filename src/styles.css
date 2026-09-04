@@ -195,6 +195,8 @@ footer img { width:190px; }
   .projects-heading .section-kicker { margin-bottom:2rem; }
   .projects-heading { padding-top:5rem; padding-bottom:2rem; }
   .projects-heading h2 { font-size:clamp(2.65rem,10vw,4rem); }
+  .projects-heading > p:last-child,
+  .process-heading > p { width:100%; justify-self:start; text-align:left; }
   .project-image { height:clamp(280px,48svh,480px); }
   .project-meta { grid-template-columns:1fr auto; }
   .project-identification p { font-size:.78rem; }
