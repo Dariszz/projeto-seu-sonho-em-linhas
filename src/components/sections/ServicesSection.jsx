@@ -1,10 +1,11 @@
 import { services } from '../../data/siteContent'
 import { ServiceItem } from '../cards/ServiceItem'
+import { PageContainer } from '../layout/PageContainer'
 import { SectionKicker } from '../ui/SectionKicker'
 
 export function ServicesSection() {
   return (
-    <section className="services section-pad" id="servicos">
+    <PageContainer as="section" className="services section-pad" id="servicos">
       <div className="services-title" data-reveal>
         <SectionKicker>03 — Atuação</SectionKicker>
         <h2>Da ideia ao<br /><em>espaço vivido.</em></h2>
@@ -12,6 +13,6 @@ export function ServicesSection() {
       <div className="services-list">
         {services.map((service) => <ServiceItem key={service.number} service={service} />)}
       </div>
-    </section>
+    </PageContainer>
   )
 }

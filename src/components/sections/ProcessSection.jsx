@@ -1,9 +1,10 @@
 import { processSteps } from '../../data/siteContent'
+import { PageContainer } from '../layout/PageContainer'
 import { SectionKicker } from '../ui/SectionKicker'
 
 export function ProcessSection() {
   return (
-    <section className="process section-pad">
+    <PageContainer as="section" className="process section-pad">
       <SectionKicker reveal>04 — Processo</SectionKicker>
       <div className="process-grid">
         <h2 data-reveal>Um caminho claro,<br />construído <em>juntos.</em></h2>
@@ -13,6 +14,6 @@ export function ProcessSection() {
           ))}
         </ol>
       </div>
-    </section>
+    </PageContainer>
   )
 }
