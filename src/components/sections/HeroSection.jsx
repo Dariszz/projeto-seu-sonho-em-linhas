@@ -6,6 +6,14 @@ export function HeroSection({ onNavigate }) {
     <section className="hero" id="inicio">
       <img className="hero-image" src="/assets/casa-conceito-hero.png" alt="Casa contemporânea integrada à paisagem — imagem conceitual" />
       <div className="hero-shade" />
+      <div className="hero-intro" aria-hidden="true">
+        <span className="hero-intro-line hero-intro-line--horizontal" />
+        <span className="hero-intro-line hero-intro-line--vertical" />
+        <div className="hero-logo-drawing">
+          <img src="/assets/logo-white.png" alt="" />
+          <span />
+        </div>
+      </div>
       <div className="blueprint" aria-hidden="true"><i /><i /><i /><i /></div>
       <PageContainer className="hero-copy">
         <p className="eyebrow">Arquitetura residencial · Interiores · Comercial</p>

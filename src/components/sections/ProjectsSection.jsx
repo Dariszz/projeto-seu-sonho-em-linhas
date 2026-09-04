@@ -1,11 +1,12 @@
 import { ProjectCard } from '../cards/ProjectCard'
 import { projects } from '../../data/siteContent'
 import { PageContainer } from '../layout/PageContainer'
+import { SectionFrame } from '../layout/SectionFrame'
 import { SectionKicker } from '../ui/SectionKicker'
 
 export function ProjectsSection() {
   return (
-    <section className="projects" id="projetos">
+    <SectionFrame contained={false} className="projects" id="projetos">
       <PageContainer className="projects-heading section-pad" data-reveal>
         <SectionKicker>02 — Seleção</SectionKicker>
         <h2>Projetos em destaque</h2>
@@ -16,6 +17,6 @@ export function ProjectsSection() {
           {projects.map((project, index) => <ProjectCard key={project.name} project={project} index={index} />)}
         </div>
       </PageContainer>
-    </section>
+    </SectionFrame>
   )
 }

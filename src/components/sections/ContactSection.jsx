@@ -1,10 +1,11 @@
 import { ArrowUpRight } from 'lucide-react'
 import { PageContainer } from '../layout/PageContainer'
+import { SectionFrame } from '../layout/SectionFrame'
 import { SectionKicker } from '../ui/SectionKicker'
 
 export function ContactSection() {
   return (
-    <section className="contact" id="contato">
+    <SectionFrame contained={false} className="contact" id="contato">
       <div className="contact-mark" aria-hidden="true"><img src="/assets/symbol-primary.png" alt="" /></div>
       <PageContainer className="contact-copy" data-reveal>
         <SectionKicker>05 — Vamos conversar</SectionKicker>
@@ -13,6 +14,6 @@ export function ContactSection() {
         <button type="button">Iniciar um projeto <ArrowUpRight /></button>
         <small>Botão demonstrativo · integração na próxima etapa</small>
       </PageContainer>
-    </section>
+    </SectionFrame>
   )
 }

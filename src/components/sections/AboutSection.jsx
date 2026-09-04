@@ -1,9 +1,9 @@
 import { SectionKicker } from '../ui/SectionKicker'
-import { PageContainer } from '../layout/PageContainer'
+import { SectionFrame } from '../layout/SectionFrame'
 
 export function AboutSection() {
   return (
-    <PageContainer as="section" className="intro section-pad" id="sobre">
+    <SectionFrame className="intro section-pad" id="sobre">
       <SectionKicker reveal>01 — O escritório</SectionKicker>
       <div className="intro-grid">
         <h2 data-reveal>O projeto começa<br />antes do primeiro <em>traço.</em></h2>
@@ -13,6 +13,6 @@ export function AboutSection() {
           <span>Juiz de Fora · Minas Gerais</span>
         </div>
       </div>
-    </PageContainer>
+    </SectionFrame>
   )
 }

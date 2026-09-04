@@ -17,8 +17,8 @@ export const projects = [
 ]
 
 export const processSteps = [
-  'Conversa e diagnóstico',
-  'Conceito e estudo preliminar',
-  'Desenvolvimento do projeto',
-  'Detalhamento e entrega',
+  { title: 'Croqui', description: 'A intenção ganha seus primeiros traços.', image: '/assets/process-sketch.png', alt: 'Croqui arquitetônico da residência conceitual' },
+  { title: 'Planta', description: 'Fluxos, proporções e usos organizam o espaço.', image: '/assets/process-plan.png', alt: 'Planta baixa conceitual da residência' },
+  { title: 'Render', description: 'Materiais, luz e atmosfera revelam o projeto.', image: '/assets/process-render.png', alt: 'Render arquitetônico da residência contemporânea' },
+  { title: 'Espaço', description: 'O desenho se transforma em lugar para viver.', image: '/assets/casa-conceito-hero.png', alt: 'Visualização final da residência integrada à paisagem' },
 ]
