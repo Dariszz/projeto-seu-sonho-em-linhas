@@ -106,7 +106,7 @@ em { font-family: 'Playfair Display', serif; font-weight: 500; }
   scrollbar-color:rgba(255,255,255,.32) transparent;
 }
 .project-card { flex:0 0 100%; min-width:0; scroll-snap-align:center; }
-.project-image { height:clamp(320px,58svh,650px); position:relative; overflow:hidden; background:#11130f; }
+.project-image { height:clamp(340px,62svh,690px); position:relative; overflow:hidden; background:#11130f; }
 .project-image-visual { position:absolute; inset:0; background-image:linear-gradient(0deg,rgba(0,0,0,.15),transparent),url('/assets/casa-conceito-hero.png'); background-size:cover; }
 .project-card.is-active .project-image-visual { animation:project-image-settle .72s cubic-bezier(.22,.75,.25,1) both; }
 @keyframes project-image-settle { from { transform:scale(1.025); } to { transform:scale(1); } }
@@ -231,7 +231,7 @@ footer img { width:190px; }
 @media (min-width: 801px) and (max-height: 760px) {
   .projects-heading { padding-top:2.5rem; padding-bottom:1.5rem; }
   .projects-heading h2 { font-size:clamp(2.6rem,3.8vw,4rem); }
-  .project-image { height:52svh; }
+  .project-image { height:58svh; }
   .project-meta { padding-block:.85rem 1rem; }
   .process { padding-block:2rem; }
   .process .section-kicker { margin-bottom:1rem; }
@@ -257,7 +257,7 @@ footer img { width:190px; }
   .projects-heading { padding-top:4.5svh; padding-bottom:2.5svh; }
   .projects-heading h2 { font-size:clamp(4.8rem,4.3vw,6.4rem); }
   .projects-heading > p:last-child { font-size:1.1rem; }
-  .project-image { height:58svh; }
+  .project-image { height:62svh; }
   .project-meta { min-height:clamp(120px,10svh,170px); padding-top:1.35rem; }
   .project-meta h3 { font-size:clamp(1.8rem,1.7vw,2.5rem); }
   .project-identification p { font-size:1rem; }
